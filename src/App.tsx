@@ -38,7 +38,10 @@ function App() {
               </PublicRoute>
             }
           />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route 
+            path="/forgot-password" 
+            element={
+              <ForgotPassword />} />
         </Route>
         <Route path="/" element={<RootLayout />}>
           <Route
