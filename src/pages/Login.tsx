@@ -112,6 +112,11 @@ export const Login = () => {
             </button>
           </div>
         </form>
+        <p className="mt-3 text-center text-sm text-blue-600 hover:underline cursor-pointer"
+          onClick={() => navigate("/forgot-password")}>
+          Forgot password?
+        </p>
+
 
         <p className="mt-4 text-center text-sm text-gray-600">
           Don't have an account?{" "}

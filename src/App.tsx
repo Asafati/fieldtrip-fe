@@ -6,6 +6,7 @@ import {
   RouterProvider
 } from "react-router-dom";
 import BaseLayout from "./layouts/BaseLayout";
+import ForgotPassword from "./pages/ForgotPassword";
 import RootLayout from "./layouts/RootLayout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -37,6 +38,7 @@ function App() {
               </PublicRoute>
             }
           />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
         </Route>
         <Route path="/" element={<RootLayout />}>
           <Route
@@ -59,13 +61,14 @@ function App() {
       </Route>
     )
   );
+
   return (
     <>
-    <AuthProvider>
-      <QueryClientProvider client={queryClient}>
-        <RouterProvider router={router} />
-      </QueryClientProvider>
-    </AuthProvider>
+      <AuthProvider>
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={router} />
+        </QueryClientProvider>
+      </AuthProvider>
     </>
   );
 }
