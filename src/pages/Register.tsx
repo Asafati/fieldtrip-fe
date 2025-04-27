@@ -33,8 +33,8 @@ export const Register = () => {
   const { mutate } = useMutation({ mutationFn: handleRegister });
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div className="max-w-md w-full bg-white p-8 rounded-2xl shadow-md">
+    <div className="min-h-screen flex items-center justify-center bg-yellow-100 px-4">
+      <div className="max-w-md w-full bg-yellow p-8 rounded-2xl shadow-md">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
           Create an Account
         </h2>
@@ -55,7 +55,7 @@ export const Register = () => {
               type="text"
               required
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
-              placeholder="yourusername"
+              placeholder="your username"
               {...register("username")}
             />
 
